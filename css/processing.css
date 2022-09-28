@@ -1,0 +1,273 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    
+    
+}
+ 
+
+* {
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
+    
+    background-color: #FFFFFF;
+}
+
+#main-container {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    font-weight: 550;
+  
+    size: 18px;  
+    color: rgb(0, 0, 0);
+     font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', 'sans-serif';
+    
+   
+}
+
+#store-box{
+    width: 85%;
+    margin-left: 69px;
+     height: 200px;
+     width: 300px;
+     /* border: 1px solid black; */
+     display: flex;
+}
+
+#home{
+
+    height: 90px;
+    width: 110px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+ 
+
+#store{
+
+    height: 90px;
+    width: 110px;
+    border: 1px solid rgb(196, 194, 194);
+    margin: auto;
+    text-align: center;
+}
+
+#Zara_img{
+    margin-top: 20px;
+}
+
+#p{
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+     
+}
+
+#items{
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    font-weight: 500;
+  
+    size: 16px;  
+    color: rgb(0,0,0);
+     font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', 'sans-serif';
+}
+ 
+ #append-box{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(10,8%);
+
+    grid-gap: 5%;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+ }
+ 
+ #img{
+    height: 200px;
+    width: 120px;
+    /* border: 1px solid black; */
+ }
+
+ #adress-box{
+
+    height: 110px;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid #E5E5E5;
+    border-right: none;
+    border-left: none;
+    display: flex;
+ }
+
+ #deliver-date{
+     margin-left: 10px;
+    margin-top: 20px;
+    font-weight: 550;
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 11px;  
+    color: rgb(0,0,0);
+    line-height: 15px;
+    
+     
+ }
+
+ #color-box{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 40px;
+    clip-path: circle(50%);
+ }
+
+ #ship{
+    font-size: 10px;
+    color: gray;
+    font-weight: 300;
+ }
+
+ #time-frame{
+       line-height: 40px;
+       color: gray;
+       font-size: 10px;  
+       font-weight: 500;
+
+ }
+
+ #footer{
+    margin: auto;
+    margin-top: 200px;
+    /* border: 1px solid black; */
+   cursor: pointer;
+    height: 300px;
+    width: 85%;
+    display: flex;
+    
+ }
+
+ #footer>div{
+    height: 250px;
+    width: 150px;
+    /* border: 1px solid black; */
+ }
+
+ .gift-card{
+    
+    font-size: 10px;
+    color: gray;
+    line-height: 19px;
+ }
+
+ #help-zara{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 550;
+    line-height: 30px;
+ }
+ 
+ 
+ #india{
+    
+    margin: auto;
+    margin-top: 160px;
+    height: 50px;
+    
+    /* border: 1px solid black; */
+    width: 85%;
+    justify-content: space-between;
+    display: flex;
+      
+ }
+
+ #spain{
+    margin: auto;
+     height: 100px;
+     width: 85%;
+     margin-top: 60px;
+ }
+ .origin{
+    font-size: 10px;
+    color: gray;
+    line-height: 15px;
+ }
+
+ /* #continue{
+    height: 50px;
+    width: 350px;
+    
+  
+     border: 1px solid black;
+     position: fixed;
+     
+
+     
+     
+ } */
+
+ /* #next-payment{
+    padding: 10px 60px;
+    background-color: #000000;
+    color: white;
+    
+
+ }
+
+ #shippp{
+    font-size: 12px;
+    color: rgb(37, 36, 36);
+    
+    
+ }
+
+ #pay{
+    
+ } */
+
+ #continue {
+    margin-top: 100px;
+    display: flex;
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+  /* border: 1px solid black; */
+
+
+}
+
+#total-pirce-div {
+    display: flex;
+    flex-direction: column;
+    /* height: 40px; */
+    justify-content: center;
+    margin-right: 60px;
+    /* border: 1px solid black; */
+}
+
+#continue-button {
+    background-color: black;
+    color: white;
+    padding-left: 90px;
+    padding-right: 90px;
+    height: 40px;
+    /* border: 1px solid black; */
+
+}
+
+.total-price1{
+    font-size: 10px;
+    color: gray;
+}
