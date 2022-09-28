@@ -1,0 +1,15 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+}
+#card{
+    /* border: 1px solid red; */
+    padding: 20px 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#card>img{
+    height: 300px;
+}
+
