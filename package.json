@@ -1,0 +1,23 @@
+{
+  "name": "moldy-care-8778",
+  "version": "1.0.0",
+  "description": "moldy-care-8778",
+  "main": "cart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shitalkumar87/moldy-care-8778.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shitalkumar87/moldy-care-8778/issues"
+  },
+  "homepage": "https://github.com/shitalkumar87/moldy-care-8778#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}
