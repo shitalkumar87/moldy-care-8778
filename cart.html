@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping basket - ZARA India</title>
     <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="https://static.zara.net/stdstatic/2.20.0-b.20//images/favicon-32x32.png" />
+
   </head>
   <body>
     <nav>
-      <div id="logo"><a href="./index.html"><img
+      <!-- <div id="logo"><a href="./index.html"><img
         src="https://logodownload.org/wp-content/uploads/2014/05/zara-logo-1.png"
         alt="zaralogo"/></a>        
       </div>
-      <div id="help"><a href="./help.html">HELP</a></div>
+      <div id="help"><a href="./help.html">HELP</a></div> -->
+      <div id="navbar"></div>
     </nav>
     <div id="bag">
       <p>CART</p>
@@ -35,5 +41,14 @@
     <div id="footer"></div>
   </body>
 </html>
+<script type="module">
+  import footer from "./footer.js"
+  let footer_part = document.getElementById("footer");
+  footer_part.innerHTML = footer();
+
+  import navbar from "./navbar.js";
+  let navbar_part = document.getElementById("navbar");
+  navbar_part.innerHTML = navbar()
+</script>
 
 <script src="./cart.js"></script>
