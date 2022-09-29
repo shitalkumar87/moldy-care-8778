@@ -17,6 +17,10 @@ let renderDom = (data) => {
     if(el.image1 !== 'https://static.zara.net/stdstatic/2.20.0-b.20/images/transparent-background.png'){
      let div1 = document.createElement("div");
      div1.setAttribute('id','card');
+    //  let data = el;
+     div1.addEventListener('click',function AddDetails(){
+         localStorage.setItem('details',JSON.stringify(el))
+     })
 
      let img = document.createElement('img');
      img.src = el.image1;
