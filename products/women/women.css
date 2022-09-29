@@ -1,0 +1,26 @@
+
+#card{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+    /* margin-top: -10px; */
+}
+#card>img{
+    height: 600px;
+}
+#images{
+   
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#data>img{
+    width: 90%;
+    /* height: 500px; */
+}
