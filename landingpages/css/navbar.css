@@ -102,4 +102,20 @@ top: 25px;
 }
 .sidebar__content{
     padding-top: 150px;
+    position: relative;
+    border: 2px solid pink;
+}
+.layout-categories__container{
+  
+}
+.layout-categories__container>li{
+    float: left;
+    list-style: none;
+}
+.layout_subcat{
+    margin-top: 60px;
+    list-style: none;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }

@@ -19,10 +19,6 @@
        
     </header>
     <div id="sidebar__content-wrap">
-        <button class="sidebar_close_button" style="z-index:1;cursor: pointer;" onclick="hidesidebar()">
-            <svg class="layout__sidebar-close-icon" width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="inherit" stroke="inherit"><path d="M16 16.707l9.646 9.647.708-.707L16.707 16l9.647-9.646-.707-.708L16 15.293 6.354 5.646l-.708.708L15.293 16l-9.647 9.646.708.708L16 16.707z"></path></svg>
-        </button>
-
     </div>
 </body>
 
@@ -35,9 +31,13 @@
     r.style.display = "none";}
 </script>
 <script type="module">
-    import {navbar} from "./script/navbar.js";
-    let header= document.getElementById("header__container");
-    header.innerHTML=navbar();
+     import { navbar } from "./script/navbar.js";
+    import { sidecontent } from "./script/sidebar_content.js"
+    let header = document.getElementById("header__container");
+    header.innerHTML = navbar();
+    let sidebar= document.getElementById("sidebar__content-wrap");
+    sidebar.innerHTML=sidecontent();
+
     
 </script>
 <script src="./script/sidebar.js"></script>
