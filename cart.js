@@ -1,24 +1,36 @@
 let data = JSON.parse(localStorage.getItem("product"));
-console.log(data);
-let container =document.getElementById("items");
+
 let cart_total = 0;
 
 let display_product = (data)=> {
-  console.log('Hello');
+  document.querySelector("#cartLen").innerText = data.reduce((sum, item) =>{
+    return sum + item.qty
+},0);
+
+cart_total =
+  "₹ " +
+  data.reduce(function (ac, cv) {
+    return ac + cv.price * cv.qty;
+  }, 0);
+
+  localStorage.setItem("total",JSON.stringify(cart_total));
+
+document.querySelector("#total").innerHTML = cart_total;
+
+
+
+  let container =document.getElementById("items");
+  container.innerHTML = null;
   data.forEach((elem, index) => {
     let mainDiv = document.createElement("div");
     let img = document.createElement("img");
     img.src = elem.imgUrl;
 
-    let details = document.createElement("div");
-    details.setAttribute("class", "desc");
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", "desc");
     let name = document.createElement("h5");
     name.innerText = elem.prod_name;
-    let price = document.createElement("p");
-    price.style.textDecoration = "line-through";
-    price.innerText = "₹" + elem.strikedOffPrice;
     let price2 = document.createElement("p");
-    price2.setAttribute("class", "yellow");
     price2.innerText = "₹" + elem.price;
     let del = document.createElement("button");
     del.innerText = "Delete";
@@ -28,7 +40,7 @@ let display_product = (data)=> {
         removeElem(index);
       });
 
-    let quantityMain = document.createElement("div");
+    let div2 = document.createElement("div");
     let dec = document.createElement("button");
     dec.innerText = "-";
     if (elem.qty > 1) {
@@ -47,15 +59,15 @@ let display_product = (data)=> {
         incCount(index);
       });
     // appending the child elements with the parent elements
-    quantityMain.append(dec, quantity, inc);
-    details.append(name, price, price2, quantityMain, del);
-    mainDiv.append(img, details);
+    div2.append(dec, quantity, inc);
+    div1.append(name, price2, div2, del);
+    mainDiv.append(img, div1);
     container.append(mainDiv);
   });
 }
 display_product(data);
 
-let removeElem = (index)=> {
+function removeElem(index) {
   data.splice(index, 1);
   localStorage.setItem("cart", JSON.stringify(data));
   display_product(data);
@@ -73,7 +85,7 @@ let decCount = (index)=> {
   }
 }
 let proceed = (data)=> {
-  if(data.length===0){
+  if(data){
     alert("Your cart is empty Please add some items")
     window.location.href = "./index.html";
     return
@@ -83,4 +95,3 @@ let proceed = (data)=> {
   }
   window.location.href = "./login.html";
 }
-proceed(data);
