@@ -8,7 +8,7 @@
     height: 620px;
     margin: auto;
     margin-top: 50px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -93,6 +93,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    width: 200px;
 }
 .circle{
     border: 1px solid;
@@ -112,13 +113,22 @@
     background-color: black;
     height: 1.2px;
 }
-.prod_sizes{
+#prod_sizes{
     display: grid;
     grid-template-rows: repeat(4,1fr);
     gap: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
+}
+.prod_sizes_div{
+    height: 17px;
+    display: flex;
+    align-items: center;
+}
+.prod_sizes_div:hover{
+    background-color: #ddd;
+    cursor: pointer;
 }
 .find_size{
     display: flex;
