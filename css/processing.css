@@ -12,7 +12,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 * {
     font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
     
+<<<<<<< HEAD
     
+=======
+    /* background-color: #FFFFFF; */
+>>>>>>> 0bc504bc14f60d1dfaa715781d560d09ca4259af
 }
 
 #main-container {
