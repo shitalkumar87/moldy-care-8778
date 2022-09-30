@@ -1,0 +1,119 @@
+.header__logo{
+    width: 307;
+    height: 128;
+    margin-left: 60px;
+    position: absolute;
+    left: 8vh;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    
+}
+.header__main{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    border: 2px solid hotpink;
+    height: 120px;
+}
+.header__left{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(80, 21, 21);
+    width: max-content;
+    width: calc(var(--layout-header-margin) + var(--margined-grid-column-width) * 3 + var(--grid-column-gutter) * 2);
+}
+.hamburger{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 32;
+    background-color: transparent;
+    border: none;
+    --miniature-width: 1.87vw;
+}
+.header__right
+{
+    margin-top: 30px;
+
+}
+.header_right_content{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid green;
+    width: 505;
+    align-items: center;
+    height: 100%;
+    
+}
+.header_searchbar{
+    margin-right: 72px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.7px;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background: none;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    height: fit-content;
+    padding-right: 40px;
+    font-weight: 700;
+
+}
+.header__links{
+    padding-left: 20px;
+}
+.header__cart{
+    border: 1px solid grey;
+    text-align: center;
+    background-image: url(".//components/cart.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    padding-left: 20px;
+    text-align: center;
+}
+.sidebar_close_button{
+    position: fixed;
+    z-index: 900;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+.layout-header-links__cart-icon{
+position: absolute;
+top: 25px;
+}
+.cart_count{
+    font-size: 10px;
+    height: 100%;
+    line-height: 24px;
+    position: relative;
+    width: 100%;
+}
+#sidebar__content-wrap{
+    display: none;
+}
+.sidebar__content{
+    padding-top: 150px;
+    position: relative;
+    border: 2px solid pink;
+}
+
+.layout-categories__container>li{
+    float: left;
+    list-style: none;
+}
+.layout_subcat{
+    margin-top: 60px;
+    list-style: none;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}

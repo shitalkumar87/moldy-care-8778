@@ -49,8 +49,21 @@
     text-align: center;
     overflow: scroll;
     overflow-x: hidden;
-    
 }
+/* width */
+.prod_image::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  .prod_image::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .prod_image::-webkit-scrollbar-thumb {
+    background: #000000; 
+  }
 .prod_image_box img{
     width: 99%;
     /* border: 1px solid blue; */
@@ -96,7 +109,7 @@
     width: 200px;
 }
 .circle{
-    border: 1px solid;
+    
     width: 12px;
     height: 12px;
     margin-top: 8px;
