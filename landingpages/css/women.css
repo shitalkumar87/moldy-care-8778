@@ -1,0 +1,16 @@
+video{
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue;
+    object-fit: cover;
+    
+}
+section{
+    margin: auto;
+    text-align: center;
+}
+section>img{
+    width: 100%;
+    object-fit: scale-down;
+    
+}

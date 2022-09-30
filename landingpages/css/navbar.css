@@ -1,17 +1,3 @@
-.header__logo{
-    width: 307;
-    height: 128;
-    margin-left: 60px;
-    position: absolute;
-    left: 8vh;
-}
-a{
-    color: inherit;
-    text-decoration: inherit;
-    font-size: inherit;
-    letter-spacing: inherit;
-    
-}
 .header__main{
     display: flex;
     width: 100%;
@@ -23,9 +9,23 @@ a{
 .header__left{
     display: flex;
     justify-content: space-between;
-    border: 2px solid rgb(80, 21, 21);
     width: max-content;
-    width: calc(var(--layout-header-margin) + var(--margined-grid-column-width) * 3 + var(--grid-column-gutter) * 2);
+}
+.header__logo{ 
+    height: 128;
+    margin-left: 60px;
+}
+.header__logo_svg{
+    width: 100%;
+    min-width: 172px;
+    fill: inherit;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;  
 }
 .hamburger{
     margin-top: 10px;
@@ -33,25 +33,22 @@ a{
     height: 32;
     background-color: transparent;
     border: none;
-    --miniature-width: 1.87vw;
+    z-index: 9999;
 }
-.header__right
-{
-    margin-top: 30px;
-
+.header__right{
+    width:50% ;
+    border: 2px solid red;
 }
 .header_right_content{
     display: flex;
     flex-direction: row;
-    border: 2px solid green;
-    width: 505;
+    width: 100%;
     align-items: center;
     height: 100%;
-    
+    justify-content: space-around;
 }
 .header_searchbar{
-    margin-right: 72px;
-    font-size: 13px;
+    font-size: 0.7em;
     line-height: 18px;
     letter-spacing: 0.7px;
     text-align: right;
