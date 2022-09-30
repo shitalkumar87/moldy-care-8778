@@ -13,7 +13,7 @@ function footer() {
       <li>MY ACCOUNT</li>
     </ul>
   </div>
-  <div>
+  <div id="help">
     <ul>
       <li class="head">FOLLOW US</li>
       <li>NEWS LETTER</li>
@@ -25,7 +25,7 @@ function footer() {
       <li>YOUTUBE</li>
     </ul>
   </div>
-  <div>
+  <div id="help">
     <ul>
       <li class="head">COMPANY</li>
       <li>ABOUT US</li>
@@ -34,7 +34,7 @@ function footer() {
       <li>WORK WITH US</li>
     </ul>
   </div>
-  <div>
+  <div id="help">
     <ul>
       <li class="head">POLICES</li>
       <li>PRIVACY POLICY</li>
