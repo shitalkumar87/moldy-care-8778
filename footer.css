@@ -1,15 +1,16 @@
 * {
     line-height: 1.5;
+    font-family: Helvetica, Arial, sans-serif;
   }
   #about {
+    width: 40%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
-  ​
   li {
-    font-size: 8px;
-    font-weight: 550;
+    font-size: 12px;
+    font-weight: lighter;
     margin-top: 5px;
   }
   ul {
@@ -21,7 +22,7 @@
   }
   .head {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
   }
   #copy {
     display: flex;
@@ -33,13 +34,14 @@
   }
   #last {
     margin-top: -10px;
+    font-size: 10px;
   }
   #bottom {
     width: 90%;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 70px;
-    font-size: 12px;
+    font-size: 11px;
   }
   #bottom > h6 {
     margin-top: 0px;
