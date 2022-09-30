@@ -62,7 +62,7 @@ function sidecontent(){
                     </ul>
                 </li>
                 <li>
-                    <a href="./women.html">
+                    <a href="./men.html">
                         MAN
                     </a>
                     <ul class="layout_subcat">
