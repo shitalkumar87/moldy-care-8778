@@ -62,11 +62,13 @@ data.forEach((el) => {
   //  let data = el;
       div1.addEventListener('click',function AddDetails(){
         
-        localStorage.setItem('details',JSON.stringify(el))
+        localStorage.setItem('details',JSON.stringify(el));
+        window.location.href="./prodDetails.html"
       });
       div2.addEventListener('click',function AddDetails(){
         
-        localStorage.setItem('details',JSON.stringify(el))
+        localStorage.setItem('details',JSON.stringify(el));
+        window.location.href="./prodDetails.html"
       });
    
 });

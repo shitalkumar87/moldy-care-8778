@@ -20,6 +20,8 @@ let renderDom = (data) => {
     //  let data = el;
      div1.addEventListener('click',function AddDetails(){
          localStorage.setItem('details',JSON.stringify(el))
+         
+         window.location.href="./prodDetails.html"
      })
 
      let img = document.createElement('img');
@@ -38,6 +40,7 @@ let renderDom = (data) => {
      
         
         div1.append(img,Name,Quantity,Price);
+        
         container.append(div1);
      }
     

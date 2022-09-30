@@ -63,13 +63,19 @@ let renderDom = (data) => {
         container.append(div1);
      }
     //  let data = el;
+
      div1.addEventListener('click',function AddDetails(){
        
-       localStorage.setItem('details',JSON.stringify(el))
+       localStorage.setItem('details',JSON.stringify(el));
+       window.location.href="./prodDetails.html"
      });
+     div1.style.cursor="pointer";
+     div2.style.cursor="pointer";
+     
      div2.addEventListener('click',function AddDetails(){
        
-       localStorage.setItem('details',JSON.stringify(el))
+       localStorage.setItem('details',JSON.stringify(el));
+       window.location.href="./prodDetails.html"
      });
      
   });
