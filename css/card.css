@@ -1,0 +1,105 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    
+    
+}
+
+*{
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
+    font-stretch: ultra-condensed;
+}
+
+ 
+
+#card{
+    width: 85%;
+    margin: auto;
+    margin-top: 120px;
+    font-weight: 550;
+  /* border: 1px solid black; */
+    font-size: medium;  
+    color: rgb(0, 0, 0);
+     font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', 'sans-serif';
+}
+
+#master-img{
+    height: 60px;
+    width: 90px;
+    border: 1px solid rgb(189, 189, 189);
+    margin-left: 99px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#pic{
+    height: 50px;
+    width: 50px;
+}
+
+#card-box{
+    height: 50px;
+    width: 85%;
+    
+    margin: auto;
+    display: flex;
+    border: 1px solid black;
+    margin-top: 80px;
+}
+
+
+* {
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
+    font-stretch: ultra-condensed;
+}
+
+#pay-main-container {
+    width: 85%;
+    margin: auto;
+}
+
+#heading {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+#card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 70%;
+    margin-left: 99px;
+    margin-top: 40px;
+}
+
+.remove-border {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    margin-top: 25px;
+}
+
+#pay-icon {
+    border: 1px solid gray;
+    width: 82px;
+    height: 54px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+/* //FIX button css code  */
+
+ #log-zara-site{
+    font-weight: 600;
+ }

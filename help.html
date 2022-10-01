@@ -7,12 +7,21 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
       rel="stylesheet" />`
-    <link rel="stylesheet" href="./help.css" />
+    <link rel="stylesheet" href="./css/help.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
   </head>
   <body>
-    <div id="header"></div>
+    <body>
+      <!-- header start -->
+      <div id="headerContents">
+          
+     </div>
+            
+       <!-- header end -->
 
     <div>
       <h2 id="help">HELP</h2>
@@ -54,15 +63,11 @@
       </div>
     </div>
     <div id="footer"></div>
+    <div id="ending">
+     
+    </div>
   </body>
 </html>
-<script src="./help.js"></script>
+<script src="./help.js" type="module"></script>
 
-<script type="module">
-  import { header } from "./components/header.js";
-  import { footers } from "./components/footer.js";
-  let navbar_div = document.getElementById("header");
-  let footer_div = document.getElementById("footer");
-  footer_div.innerHTML = footers();
-  navbar_div.innerHTML = header();
-</script>
+ 
