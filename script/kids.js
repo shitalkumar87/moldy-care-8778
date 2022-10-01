@@ -88,7 +88,7 @@ let container = document.getElementById('container');
     //  let data = el;
 
      div1.addEventListener('click',function AddDetails(){
-       
+       console.log(el)
        localStorage.setItem('details',JSON.stringify(el));
        window.location.href="./prodDetails.html"
      });
@@ -96,6 +96,7 @@ let container = document.getElementById('container');
      div2.style.cursor="pointer";
      
      div2.addEventListener('click',function AddDetails(){
+      console.log(el)
        
        localStorage.setItem('details',JSON.stringify(el));
        window.location.href="./prodDetails.html"

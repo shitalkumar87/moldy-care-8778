@@ -45,7 +45,7 @@ data.forEach((el) => {
   Price.innerText = el.price;
 
   let Price2 = document.createElement('p');
-  Price2.innerText = el.price__1;
+  Price2.innerText = el.price2;
 
   if(el.image3 !== ""){
       div3.append(img1,Name1,Price);
@@ -73,6 +73,19 @@ data.forEach((el) => {
    
 });
 }
+
+let FilterData = async() => {
+  let FilterPrice = document.getElementById('filter').value;
+  // console.log(FilterPrice)
+
+  let res = await fetch(`${url}?pricevalue_lte=${FilterPrice}`);
+  let data = await res.json();
+  // console.log(data)
+  renderDom(data);
+  
+}
+
+document.getElementById('filter').addEventListener('change',FilterData);
 
 import header from "../components/header.js"
 let Header=document.getElementById("headerContents")

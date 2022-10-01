@@ -48,6 +48,19 @@ let renderDom = (data) => {
   });
 }
 
+let FilterData = async() => {
+  let FilterPrice = document.getElementById('filter').value;
+  // console.log(FilterPrice)
+
+  let res = await fetch(`${url}?pricevalue_lte=${FilterPrice}`);
+  let data = await res.json();
+  // console.log(data)
+  renderDom(data);
+  
+}
+
+document.getElementById('filter').addEventListener('change',FilterData);
+
 import header from "../components/header.js"
 let Header=document.getElementById("headerContents")
 Header.innerHTML=header()

@@ -13,5 +13,13 @@
     height: 300px;
 }
 
+#filter{
+    margin-top: 100px;
+    justify-content: end;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 1px solid black;
+ }
 
 
