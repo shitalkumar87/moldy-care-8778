@@ -1,6 +1,12 @@
 import footer from "../components/component.js";
 let footer_part = document.getElementById("footer");
 footer_part.innerHTML = footer();
+ 
+
+import header from "../components/header.js"
+let Header=document.getElementById("headerContents")
+Header.innerHTML=header()
+
 
 let data = JSON.parse(localStorage.getItem("cart"));
 console.log(data);

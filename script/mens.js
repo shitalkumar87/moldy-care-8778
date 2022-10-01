@@ -47,3 +47,7 @@ let renderDom = (data) => {
      
   });
 }
+
+import header from "../components/header.js"
+let Header=document.getElementById("headerContents")
+Header.innerHTML=header()
