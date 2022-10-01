@@ -4,9 +4,10 @@
 #menu {
 display: flex;
 margin-top: 20px;
-gap: 100px;
-margin-left: 250px;
-text-align: center;
+gap: 20px;
+justify-content: space-evenly;
+margin: auto;
+width: 50%;
 }
 #menu div img {
 width: 40px;
@@ -20,16 +21,6 @@ margin-left: 10px;
 #help {
 margin-top: 180px;
 margin-left: 200px;
-}
-#exchange {
-margin-left: 250px;
-}
-#exchange div img{
-width: 50px;
-}
-#exchange  p{
-font-size: x-small;
-font-weight: bold;
 }
 @media only screen and (min-width:375px) and (max-width:768px){
 #menu{
