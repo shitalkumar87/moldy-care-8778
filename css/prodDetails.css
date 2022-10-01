@@ -164,3 +164,7 @@
 #prod_addToBag:hover{
     cursor: pointer;
 }
+#prod_main_container
+{
+    padding-top: 40px;
+}

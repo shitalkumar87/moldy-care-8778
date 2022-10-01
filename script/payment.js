@@ -35,8 +35,7 @@ let total=document.getElementById("price")
 
   
   import header from "../components/header.js"
-  let Header=document.getElementById("headerContents")
-  Header.innerHTML=header()
+ 
 
   import manufacture from "../components/manufacture.js"
 

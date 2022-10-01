@@ -47,8 +47,7 @@ import footer from "../components/component.js"
 
 
  import header from "../components/header.js"
-let Header=document.getElementById("headerContents")
-Header.innerHTML=header()
+
 
 import manufacture from "../components/manufacture.js"
 

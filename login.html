@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>LOG IN / CREATE ACCOUNT - ZARA India - Official Website</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://static.zara.net/stdstatic/2.20.0-b.20//images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./landingpages/css/navbar.css">
+        <link rel="stylesheet" href="./landingpages/css/landingmdsection.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/login.css" />
     <link rel="stylesheet" href="./css/processing.css">
-    <link rel="stylesheet" href="./css/header.css">
         <!-- google font icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
@@ -19,10 +22,10 @@
 </head>
 
 <body>
+    <header id="header__container"></header>
+    <div id="sidebar__content-wrap">
+    </div>
   <!-- header start -->
-  <div id="headerContents">
-     
-</div>
        
   <!-- header end -->
     <div id="logindiv">
@@ -84,3 +87,23 @@
 <script src="./script/login.js" type="module"></script>
 
 </html>
+<script>
+
+    hide__ham = () => {
+      let s = document.querySelector("#sidebar__content-wrap");
+      s.style.display = "block";
+      let r = document.querySelector(".hamburger");
+      r.style.display = "none";
+    }
+  
+  </script>
+  <script type="module">
+    import { navbar } from "./components/allnavbar.js";
+    import { sidecontent } from "./components/allsidebarcontent.js"
+    let header = document.getElementById("header__container");
+    header.innerHTML = navbar();
+    let sidebar = document.getElementById("sidebar__content-wrap");
+    sidebar.innerHTML = sidecontent();
+  
+  </script>
+  <script src="./components/allsidebar.js"></script>

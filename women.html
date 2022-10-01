@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ZARA India | New Collection Online</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://static.zara.net/stdstatic/2.20.0-b.20//images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./landingpages/css/navbar.css">
+        <link rel="stylesheet" href="./landingpages/css/landingmdsection.css">
     <link rel="stylesheet" href="./css/women.css">
     <link rel="stylesheet" href="./css/header.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -13,13 +17,32 @@
 <body>
     <body>
         <!-- header start -->
-        <div id="headerContents">
-            
-       </div>
-              
+        <header id="header__container"></header>
+        <div id="sidebar__content-wrap">
+        </div>
          <!-- header end -->
     <div id="container"></div>
     
 </body>
 </html>
 <script src="./script/women.js" type="module"></script>
+<script>
+
+    hide__ham = () => {
+      let s = document.querySelector("#sidebar__content-wrap");
+      s.style.display = "block";
+      let r = document.querySelector(".hamburger");
+      r.style.display = "none";
+    }
+  
+  </script>
+  <script type="module">
+    import { navbar } from "./components/allnavbar.js";
+    import { sidecontent } from "./components/allsidebarcontent.js"
+    let header = document.getElementById("header__container");
+    header.innerHTML = navbar();
+    let sidebar = document.getElementById("sidebar__content-wrap");
+    sidebar.innerHTML = sidecontent();
+  
+  </script>
+  <script src="./components/allsidebar.js"></script>
