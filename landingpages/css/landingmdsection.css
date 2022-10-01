@@ -1,0 +1,12 @@
+.midsec_lan{
+    width: 100%;
+    height: 100%;
+}
+.midsec_lan>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.midsec_lan>video{
+    width: inherit;
+}

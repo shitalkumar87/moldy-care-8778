@@ -1,0 +1,80 @@
+video{
+    width: 100%;
+    height: 100%;
+    border: 2px solid blue;
+    object-fit: cover;
+    
+}
+section{
+    margin: auto;
+    text-align: center;
+}
+section>img{
+    width: 100%;
+    object-fit: scale-down;
+    
+}
+#menlink{
+    position: fixed;
+    cursor: pointer;
+    top: 50vh;
+  right: 20;
+    background:transparent;
+    border: none;
+    font-weight: 700;
+}
+#hover_links{
+
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    right: 30px;
+}
+#hover_links>a{
+    margin: 5px;
+}
+#hover_links>a:hover{
+    font-size:1.2rem
+}
+#landingpage__footer{
+    width: 100%;
+    height: 60vh;
+     /* border: 2px solid pink; */
+     margin-top: -800px;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     position: relative;
+     align-content: space-between;
+ }
+ #footer__links{
+     display: flex;
+     /* border: 2px solid black; */
+     flex-direction: row;
+     justify-content: space-between;
+     width: 60%;
+     margin: auto;
+     margin-top: 60px;
+     margin-bottom: 60px;
+     object-fit: cover;
+     padding: 20px;
+     
+ }
+ #footer__links>p{
+     font-size: inherit;
+     padding: 5px;
+     padding: 20px;
+ }
+ #side_foot{
+     text-align: left;
+     position: absolute;
+     bottom: 20px;
+     font-size: 10px;
+     padding: 20px;
+ }
+ 
