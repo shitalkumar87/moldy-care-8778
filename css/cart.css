@@ -13,7 +13,7 @@ nav{
 #logo{
     width: 210px;
     margin-top: 10px;
-    margin-left: 4%;
+    margin-left: 3%;
     margin-bottom: 10px;
 }
 #logo>a>img{
@@ -40,7 +40,7 @@ a{
 }
 #bag{
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 40px;
     font-weight: lighter;
     font-size: 20px;
