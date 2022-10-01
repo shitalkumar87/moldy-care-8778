@@ -1,3 +1,30 @@
+#womenlink{
+    position: fixed;
+    cursor: pointer;
+    top: 50vh;
+    left: 20;
+    background:transparent;
+    border: none;
+    font-weight: 700;
+}
+#kidlink{
+    position: fixed;
+    cursor: pointer;
+    top: 50vh;
+    right: 20;
+    background:transparent;
+    border: none;
+    font-weight: 700;
+}
+#menlink{
+    position: fixed;
+    cursor: pointer;
+    top: 50vh;
+    right: 20;
+    background:transparent;
+    border: none;
+    font-weight: 700;
+}
 video{
     width: 100%;
     height: 100%;
@@ -13,15 +40,6 @@ section>img{
     width: 100%;
     object-fit: scale-down;
     
-}
-#menlink{
-    position: fixed;
-    cursor: pointer;
-    top: 50vh;
-  right: 20;
-    background:transparent;
-    border: none;
-    font-weight: 700;
 }
 #hover_links{
 

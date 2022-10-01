@@ -48,11 +48,17 @@ function changebg(){
         ham.style.fill="white";
         let search=document.querySelector(".header_searchbar");
         search.style.color="white";
-        search.style.borderColor="white"
+        search.style.borderColor="white";
+        let button1=document.querySelector("#womenlink");
+        button1.style.color="white";
+        let button2=document.querySelector("#kidlink");
+        button2.style.color="white";
+        let a1= document.querySelector("#hover_links");
+        a1.style.color="white";
 
         
     }
-    if(window.scrollY>600){
+    if(window.scrollY>1000){
         let navbar= document.querySelector(".header__main");
         navbar.style.color="black";
         let logo= document.querySelector(".header__logo_svg");
@@ -61,7 +67,44 @@ function changebg(){
         ham.style.fill="black";
         let search=document.querySelector(".header_searchbar");
         search.style.color="black";
-        search.style.borderColor="black"
+        search.style.borderColor="black";
+        let button1=document.querySelector("#womenlink");
+        button1.style.color="black";
+        let button2=document.querySelector("#kidlink");
+        button2.style.color="black"
+    }
+    if(window.scrollY>900){
+        let a1= document.querySelector("#hover_links");
+        a1.style.color="black";
+    }
+    if(window.scrollY>3000){
+        let a1= document.querySelector("#hover_links");;
+        a1.style.display="none";
+        let button1=document.querySelector("#womenlink");
+        button1.style.display="none";
+        let button2=document.querySelector("#kidlink");
+        button2.style.display="none";
+    }
+    else{
+        let a1= document.querySelector("#hover_links");
+        a1.style.display="block";
+        let button1=document.querySelector("#womenlink");
+        button1.style.display="block";
+        let button2=document.querySelector("#kidlink");
+        button2.style.display="block";
     }
 }
 window.addEventListener("scroll",changebg);
+function takewomen(){
+    window.location.href="./women.html"
+}
+function takekid(){
+    window.location.href="./kids.html"
+}
+function takemen(){
+    window.location.href="./men.html"
+}
+function zaraathel(){
+    console.log("asdfsg")
+    window.location.href="#first_img"
+}

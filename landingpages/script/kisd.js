@@ -54,15 +54,49 @@ function changebg(){
         ham.style.fill="white";
         let search=document.querySelector(".header_searchbar");
         search.style.color="white";
-        search.style.borderColor="white"
+        search.style.borderColor="white";
+        let buttn = document.querySelector("#menlink");
+        buttn.style.color="white";
+        let a1= document.querySelector("#hover_links");
+        a1.style.color="white";
 
         
     }
     if(window.scrollY>400){
         let navbar= document.querySelector(".header__main");
         navbar.style.color="black";
-        let hamburger= document.querySelector(".hamburger>svg");
-        hamburger.fill="white"
+        let logo= document.querySelector(".header__logo_svg");
+        logo.style.fill="black";
+        let ham= document.querySelector(".hamgurber_logo");
+        ham.style.fill="black";
+        let search=document.querySelector(".header_searchbar");
+        search.style.color="black";
+        search.style.borderColor="black";
+        let buttn = document.querySelector("#menlink");
+        buttn.style.color="black";
+        let a1= document.querySelector("#hover_links");
+        a1.style.color="black";
+    }
+    if(window.scrollY>6000){
+        let a1= document.querySelector("#hover_links");;
+        a1.style.display="none";
+        let buttn = document.querySelector("#menlink");
+        buttn.style.display="none";
+    }
+    else{
+        let a1= document.querySelector("#hover_links");
+        a1.style.display="block";
+        let buttn = document.querySelector("#menlink");
+        buttn.style.display="block";
     }
 }
 window.addEventListener("scroll",changebg);
+function takewomen(){
+    window.location.href="./women.html"
+}
+function takekid(){
+    window.location.href="./kids.html"
+}
+function takemen(){
+    window.location.href="./men.html"
+}

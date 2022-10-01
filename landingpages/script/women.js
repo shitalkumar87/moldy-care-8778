@@ -48,7 +48,11 @@ function changebg(){
         ham.style.fill="white";
         let search=document.querySelector(".header_searchbar");
         search.style.color="white";
-        search.style.borderColor="white"
+        search.style.borderColor="white";
+        let buttn = document.querySelector("#menlink");
+        buttn.style.color="white";
+        let a1= document.querySelector("#hover_links");
+        a1.style.color="white";
 
         
     }
@@ -61,7 +65,35 @@ function changebg(){
         ham.style.fill="black";
         let search=document.querySelector(".header_searchbar");
         search.style.color="black";
-        search.style.borderColor="black"
+        search.style.borderColor="black";
+        
+    }
+    if(window.scrollY>450){
+        let buttn = document.querySelector("#menlink");
+        buttn.style.color="black";
+        let a1= document.querySelector("#hover_links");
+        a1.style.color="BLACK";
+    }
+    if(window.scrollY>4500){
+        let a1= document.querySelector("#hover_links");;
+        a1.style.display="none";
+        let buttn = document.querySelector("#menlink");
+        buttn.style.display="none"
+    }
+    else{
+        let a1= document.querySelector("#hover_links");
+        a1.style.display="block";
+        let buttn = document.querySelector("#menlink");
+        buttn.style.display="block"
     }
 }
-window.addEventListener("scroll",changebg)
+window.addEventListener("scroll",changebg);
+function takewomen(){
+    window.location.href="./women.html"
+}
+function takekid(){
+    window.location.href="./kids.html"
+}
+function takemen(){
+    window.location.href="./men.html"
+}

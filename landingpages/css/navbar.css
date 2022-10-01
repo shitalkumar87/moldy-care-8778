@@ -4,7 +4,7 @@
     width: 100%;
     position: fixed;
     justify-content: space-between;
-    border: 2px solid hotpink;
+    /* border: 2px solid hotpink; */
     height: 120px;
 }
 .header__left{
@@ -38,7 +38,7 @@ a{
 }
 .header__right{
     width:50% ;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .header_right_content{
     display: flex;
@@ -67,7 +67,7 @@ a{
     padding-left: 20px;
 }
 .cart_count{
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     text-align: center;
     height: 100%;
     width: 100%;
@@ -102,7 +102,7 @@ top: 25px;
     z-index: 10;
     padding-top: 150px;
     position: fixed;
-    border: 8px solid rgb(110, 12, 28);
+    /* border: 8px solid rgb(110, 12, 28); */
     background-color: white;
     width: 45vh;
     height: 100%;
@@ -146,7 +146,7 @@ top: 25px;
 }
 .hamburger{
     cursor: pointer;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 }
 #header__main{
     background-color: white;
