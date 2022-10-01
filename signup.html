@@ -10,10 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/signup.css" />
     <link rel="stylesheet" href="./css/processing.css">
+    <link rel="stylesheet" href="./css/header.css">
+      <!-- google font icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 
 <body>
-
+ <!-- header start -->
+ <div id="headerContents">
+     
+</div>
+       
+  <!-- header end -->
      
 
 
@@ -119,20 +128,21 @@
  <!-- footer end -->
     
 
- <div id="india">
-    <p class="origin">India</p>
-    <p class="origin">ENGLISH    © ALL RIGHTS RESERVED     </p>
-    
- </div>
-
-
- <div id="spain">
-     <p class="origin">NAME AND ADDRESS OF THE MANUFACTURER <br>
-       INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.)<br>
-       AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</p>
+ <div id="ending">
+     
  </div>
      
 </body>
-<script src="./script/signup.js" type="module"></script>
+<script >
+      let getdata=async()=>{
+        let res=await fetch("https://restcountries.com/v3.1/all")
+        let data=res.json()
+          console.log(data)
+}
+
+getdata()
+</script>
+
+  
 
 </html>

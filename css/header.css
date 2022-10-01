@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+#headerContents {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    margin-top: 8px;
+}
+
+#headerLeft {
+    display: flex;
+}
+
+#headerRight {
+    width: 30%;
+    display: flex;
+    /* margin-right: 10px; */
+    padding: 20px;
+    justify-content: space-between;
+    
+    /* border: 1px solid black; */
+}
+
+#headerRightLeft>a {
+     
+    padding: 0% 60% 0% 0%;
+    font-size: 13px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: rgb(41, 41, 41);
+    font-weight: 700;
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
+    font-stretch: ultra-condensed;
+}
+
+#headerRightRight {
+    display: flex;
+    width: fit-content;
+}
+
+#headerRightRight>a {
+    
+    
+    padding: 0px 10px 0px 10px;
+    font-size: 13px;
+    /* color: rgb(41, 41, 41); */
+    font-weight: 100;
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
+    font-stretch: ultra-condensed;
+    
+    /* border: 1px solid black; */
+   
+}
+
+#menu {
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+}
+
+#logo {
+    width: 212px;
+    margin-left: 40px;
+}
+ 
+ #helpOption{
+    margin-right: 50px;
+    color: gray;
+ }
+
+ #logInOption{
+    color: gray;
+ }
+
+ #cart-icon{
+    margin-top: -5px;
+ }
+
+ #Ending{
+    width: 85%;
+    margin: auto;
+ }
