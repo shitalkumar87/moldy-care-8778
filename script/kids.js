@@ -7,17 +7,31 @@ document.getElementById('footer').innerHTML = footer();
 let getData = async() => {
     let res = await fetch(`${url}`);
     res = await res.json();
-    console.log(res);
+    // console.log(res);
     renderDom(res);
 }
 getData();
 
-let container = document.getElementById('container');
 
 let renderDom = (data) => {
-  container.innerHtml = null;
+let container = document.getElementById('container');
+
+  // console.log(data)
+  container.innerHTML = null;
 
   data.forEach((el) => {
+
+    // const box = document.createElement('div');
+
+    // const photo = document.createElement('img');
+    // photo.src=el.image1;
+
+    // const pr = document.createElement('p');
+    // pr.innerText=el.price;
+
+    // box.append(photo,pr);
+    // container.append(box);
+  
     let div1 = document.createElement("div");
     div1.setAttribute('id','card');
 
@@ -80,3 +94,19 @@ let renderDom = (data) => {
      
   });
 }
+
+
+
+
+  let FilterData = async() => {
+    let FilterPrice = document.getElementById('filter').value;
+    // console.log(FilterPrice)
+
+    let res = await fetch(`${url}?pricevalue_lte=${FilterPrice}`);
+    let data = await res.json();
+    // console.log(data)
+    renderDom(data);
+    
+  }
+
+  document.getElementById('filter').addEventListener('change',FilterData);
