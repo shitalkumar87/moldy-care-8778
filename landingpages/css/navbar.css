@@ -116,17 +116,16 @@ top: 25px;
 .layout-categories__container>li>ul{
     display: none;
     position: relative;
-
-}
-.layout-categories__container>li:hover>ul{
-    display: block;
+    /* display: block; */
     position: absolute;
     padding: 10px 30px;
     padding-top: 50px;
     left: 0px;
     margin: 0;
     background-color: white;
+
 }
+
 .layout_subcat>li>ul{
     display: none;
 }

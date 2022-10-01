@@ -12,10 +12,10 @@ function sidecontent(){
         <div class="layout-categories__categories">
             <ul class="layout-categories__container">
                 <li>
-                    <a href="./women.html">
+                    <a href="#layout_subccat" onclick="womenside()">
                         WOMEN
                     </a>
-                    <ul class="layout_subcat">
+                    <ul id="womenside"class="layout_subcat">
                         <li>New</li>
                         <li>BEST SELLER</li>
                         <li>BASICS</li>
@@ -62,10 +62,10 @@ function sidecontent(){
                     </ul>
                 </li>
                 <li>
-                    <a href="./men.html">
+                    <a href="#layout_subcat" onclick="menside()">
                         MAN
                     </a>
-                    <ul class="layout_subcat">
+                    <ul id="manside"class="layout_subcat">
                         <li>New</li>
                         <li>BEST SELLER</li>
                         <li>TREND</li>
@@ -116,12 +116,12 @@ function sidecontent(){
 
                 </li>
                 <li>
-                    <a href="./women.html">
+                    <a href="#layout" onclick="kidsside()" >
                         KIDS
                     </a>
-                    <ul class="layout_subcat">
+                    <ul id="kidside" class="layout_subcat">
                         <a href="#">HALLOWEEN</a>
-                        <li>GIRL | 6-14 YEARS
+                        <li >GIRL | 6-14 YEARS
                             <ul>
                                 <li>HALLOWEEN</li>
                                 <li>HALLOWEENALPINE PARADISE</li>

@@ -9,35 +9,58 @@
     <link rel="icon" type="image/png" sizes="32x32"
         href="https://static.zara.net/stdstatic/2.20.0-b.20//images/favicon-32x32.png" />
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/landingmdsection.css">
     <style>
-       
+
     </style>
 </head>
 
 <body>
-    <header id="header__container">
-       
-    </header>
+    <header id="header__container"></header>
     <div id="sidebar__content-wrap">
     </div>
+
+    <section class="midsec_lan" class="first_img"><img id="img1"
+            src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-man-athleticz/subhome-xmedia-39//w/1735/IMAGE-landscape-fill-ce34d91d-aa7d-45ee-9286-03e5da22c420-default_0.jpg?ts=1664446878049"
+            alt=""></section>
+    <section class="midsec_lan" class="second_img"><img id="img2"
+            src="./css/components/menjpg.png"
+            alt=""></section>
+    <section class="midsec_lan" class="third_img"><img id="img3"
+            src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-man-new/subhome-xmedia-39//w/1735/IMAGE-landscape-fill-fbb20929-1e45-4d24-8139-c6351a17419b-default_0.jpg?ts=1664208804884"
+            alt=""></section>
+    <section class="midsec_lan" class="fourth_img"><img id="img4"
+            src="https://static.zara.net/photos///contents/mkt/spots/aw22-man-north-shoesandbags/subhome-xmedia-39//w/1735/IMAGE-landscape-fill-cf948558-c0fd-435d-a052-8c66026c9f16-default_0.jpg?ts=1664447076752"
+            alt=""></section>
+    <section class="midsec_lan" class="fifth_img"><img id="img5"
+            src="https://static.zara.net/photos///contents/mkt/spots/ss22-newsletter/subhome-xmedia-03//w/1735/IMAGE-landscape-fill-6f5f24a2-7463-4ad2-91e9-0f2a99f75e89-default_0.jpg?ts=1643121593479"
+            alt=""></section>
+   
+
+
+
+
 </body>
 
 </html>
 <script>
+
     hide__ham = () => {
-    let s = document.querySelector("#sidebar__content-wrap");
-    s.style.display = "block";
-    let r = document.querySelector(".hamburger");
-    r.style.display = "none";}
+        let s = document.querySelector("#sidebar__content-wrap");
+        s.style.display = "block";
+        let r = document.querySelector(".hamburger");
+        r.style.display = "none";
+    }
+
 </script>
 <script type="module">
-     import { navbar } from "./script/navbar.js";
+    import { navbar } from "./script/navbar.js";
     import { sidecontent } from "./script/sidebar_content.js"
     let header = document.getElementById("header__container");
     header.innerHTML = navbar();
-    let sidebar= document.getElementById("sidebar__content-wrap");
-    sidebar.innerHTML=sidecontent();
+    let sidebar = document.getElementById("sidebar__content-wrap");
+    sidebar.innerHTML = sidecontent();
 
-    
 </script>
 <script src="./script/sidebar.js"></script>
+<script src="./script/men.js"></script>
