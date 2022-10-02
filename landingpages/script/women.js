@@ -53,6 +53,8 @@ function changebg(){
         buttn.style.color="white";
         let a1= document.querySelector("#hover_links");
         a1.style.color="white";
+        let cart= document.querySelector(".svg__cart");
+        cart.style.fill="white";
 
         
     }
@@ -66,6 +68,8 @@ function changebg(){
         let search=document.querySelector(".header_searchbar");
         search.style.color="black";
         search.style.borderColor="black";
+        let cart= document.querySelector(".svg__cart");
+        cart.style.fill="black";
         
     }
     if(window.scrollY>450){
@@ -97,3 +101,24 @@ function takekid(){
 function takemen(){
     window.location.href="./men.html"
 }
+
+let m1=document.querySelector("#img1");
+let m2=document.querySelector("#img2");
+let m3=document.querySelector("#img3");
+let m4=document.querySelector("#img4");
+let m5=document.querySelector("#img5")
+m1.addEventListener("click",()=>{
+    window.location.href="../women.html"
+})
+m2.addEventListener("click",()=>{
+    window.location.href="../women.html"
+})
+m3.addEventListener("click",()=>{
+    window.location.href="../women.html"
+})
+m4.addEventListener("click",()=>{
+    window.location.href="../women.html"
+})
+m5.addEventListener("click",()=>{
+    window.location.href="../women.html"
+})

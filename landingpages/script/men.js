@@ -55,6 +55,8 @@ function changebg(){
         button2.style.color="white";
         let a1= document.querySelector("#hover_links");
         a1.style.color="white";
+        let c=document.querySelector(".svg__cart")
+        c.style.fill="white"
 
         
     }
@@ -72,6 +74,8 @@ function changebg(){
         button1.style.color="black";
         let button2=document.querySelector("#kidlink");
         button2.style.color="black"
+        let c=document.querySelector(".svg__cart")
+        c.style.fill="black"
     }
     if(window.scrollY>900){
         let a1= document.querySelector("#hover_links");
@@ -107,4 +111,48 @@ function takemen(){
 function zaraathel(){
     console.log("asdfsg")
     window.location.href="#first_img"
+}
+
+let m1=document.querySelector("#img1");
+let m2=document.querySelector("#img2");
+let m3=document.querySelector("#img3");
+let m4=document.querySelector("#img4");
+let m5=document.querySelector("#img5")
+m1.addEventListener("click",()=>{
+    window.location.href="../mens.html"
+})
+m2.addEventListener("click",()=>{
+    window.location.href="../mens.html"
+})
+m3.addEventListener("click",()=>{
+    window.location.href="../mens.html"
+})
+m4.addEventListener("click",()=>{
+    window.location.href="../mens.html"
+})
+m5.addEventListener("click",()=>{
+    window.location.href="../mens.html"
+})
+
+
+if(window.scrollY<500){
+    let navbar= document.querySelector(".header__main");
+    navbar.style.color="white";
+    let logo= document.querySelector(".header__logo_svg");
+    logo.style.fill="white";
+    let ham= document.querySelector(".hamgurber_logo");
+    ham.style.fill="white";
+    let search=document.querySelector(".header_searchbar");
+    search.style.color="white";
+    search.style.borderColor="white";
+    let button1=document.querySelector("#womenlink");
+    button1.style.color="white";
+    let button2=document.querySelector("#kidlink");
+    button2.style.color="white";
+    let a1= document.querySelector("#hover_links");
+    a1.style.color="white";
+    let c=document.querySelector(".svg__cart")
+    c.style.fill="white"
+
+    
 }
