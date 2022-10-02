@@ -3,6 +3,7 @@
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
     text-align: center;
+    padding-top: 100px;
 }
 #card{
     /* border: 1px solid red; */

@@ -16,11 +16,12 @@ function sidecontent(){
                         WOMEN
                     </a>
                     <ul id="womenside"class="layout_subcat">
-                        <li>New</li>
-                        <li>BEST SELLER</li>
-                        <li>BASICS</li>
-                        <li>JACKETS | OVERSHIRTS</li>
-                        <li>DRESSES | JUMPSUITS</li>
+                        <li><a href="./women.html">New</a></li>
+                        
+                        <li><a href="./women.html">BEST SELLER</a></li>
+                        <li><a href="./women.html">BASICS</a></li>
+                        <li><a href="./women.html">JACKETS | OVERSHIRTS</a></li>
+                        <li><a href="./women.html">DRESSES | JUMPSUITS</a></li>
                         <li>BLAZER</li>
                         <li>SHIRTS</li>
                         <li>TROUSERS</li>
@@ -66,10 +67,10 @@ function sidecontent(){
                         MAN
                     </a>
                     <ul id="manside"class="layout_subcat">
-                        <li>New</li>
-                        <li>BEST SELLER</li>
-                        <li>TREND</li>
-                        <li>JACKETS</li>
+                        <li><a href="./men.html">New</a></li>
+                        <li><a href="./men.html">BEST SELLER</a></li>
+                        <li><a href="./men.html">TREND</a></li>
+                        <li><a href="./men.html">JACKETS</a></li>
                         <li>PUFFER</li>
                         <li>SHIRTS</li>
                         <li>T-SHIRTS</li>
@@ -123,12 +124,12 @@ function sidecontent(){
                         <a href="#">HALLOWEEN</a>
                         <li >GIRL | 6-14 YEARS
                             <ul>
-                                <li>HALLOWEEN</li>
-                                <li>HALLOWEENALPINE PARADISE</li>
-                                <li>NEW</li>
-                                <li>BEST SELLER</li>
-                                <li>BASICS</li>
-                                <li>COATS | JACKETS</li>
+                                <li><a href="./kids.html">HALLOWEEN</a></li>
+                                <li><a href="./kids.html">HALLOWEENALPINE PARADISE</a></li>
+                                <li><a href="./kids.html">NEW</a></li>
+                                <li><a href="./kids.html">BEST SELLER</a></li>
+                                <li><a href="./kids.html">BASICS</a></li>
+                                <li><a href="./kids.html">COATS | JACKETS</a></li>
                                 <li>SWEATSHIRTS</li>
                                 <li>DREASSES | JUMPSUITS</li>
                                 <li>T-SHIRTS</li>

@@ -7,6 +7,9 @@ a{
     text-decoration: none;
     color: black;
 }
+#total{
+    font-size: 15px;
+}
 #bag{
     margin-left: 50px;
     padding-top: 200px;

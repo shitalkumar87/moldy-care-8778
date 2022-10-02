@@ -79,6 +79,7 @@ let append=async(data)=>{
 
 async function main(){
     let data= await getdata()
+    console.log(data)
      append(data)
 
 }
