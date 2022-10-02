@@ -114,5 +114,4 @@ let proceed = (data)=> {
   else {
     window.location.href = "./processing.html";
   }
-  window.location.href = "./login.html";
 }
