@@ -25,7 +25,14 @@
         <a href="#" id="one"></a>
         <img id="img1"
             src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-man-athleticz/subhome-xmedia-39//w/1735/IMAGE-landscape-fill-ce34d91d-aa7d-45ee-9286-03e5da22c420-default_0.jpg?ts=1664446878049"
-            alt=""></section>
+            alt="">
+        </section>
+        <section class="midsec_lan" class="video_one">
+            <video id="video1" muted autoplay loop src="./css/components/mens_video.mp4"></video>
+    
+            <button id="mutebutton" onclick="mutevideo()"><img id="mutesvg" src="../icons/vol_off.svg" alt=""></button>
+    
+        </section>
     <section class="midsec_lan" class="second_img">
         <a href="#" id="two"></a>
         <img id="img2"
@@ -76,6 +83,19 @@
 
 </html>
 <script>
+    mutevideo = () => {
+        
+        let v= document.querySelector("video");
+        let img=document.querySelector("#mutesvg");
+        v.muted=!v.muted;
+        if(v.muted==true){
+            img.src="../icons/vol_off.svg"
+        }
+        else{
+            img.src="../icons/vol_up.svg"
+        }
+    
+}
 
     hide__ham = () => {
         let s = document.querySelector("#sidebar__content-wrap");

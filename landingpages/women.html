@@ -18,6 +18,12 @@
     </div>
   <a href="#" id="zero"></a>
   <section class="midsec_lan" class="first_img"><img id="img1" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-38-3//w/1733/IMAGE-landscape-default-fill-3826ba34-9fad-4264-9ecd-6d2bc9295d9c-default_0.jpg?ts=1663773455159" alt=""></section >
+    <section class="midsec_lan" class="video_one">
+        <video id="video1" muted autoplay loop src="./css/components/women1080vedeo.mp4"></video>
+
+        <button id="mutebutton" onclick="mutevideo()"><img id="mutesvg" src="../icons/vol_off.svg" alt=""></button>
+
+    </section>
     <a href="#" id="one"></a>  
     <section  class="midsec_lan"class="second_img"><img id="img2" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-best-sellers/subhome-xmedia-38//w/1733/IMAGE-landscape-fill-c68605f6-1f94-4830-8f4a-0f3bf22017e2-default_0.jpg?ts=1663579002306" alt=""></section >
         <a href="#" id="two"></a>  
@@ -25,12 +31,7 @@
             <a href="#" id="three"></a>  
             <section class="midsec_lan" class="fourth_img"><img id="img4" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-basics/subhome-xmedia-38//w/1733/IMAGE-landscape-fill-f5302ebb-2ddc-4218-81c2-eb0464c2d73f-default_0.jpg?ts=1663576361647" alt=""></section >
                 <a href="#" id="four"></a>  
-                <section class="midsec_lan" class="video_one">
-                    <video id="video1" muted autoplay loop src="./css/components/women1080vedeo.mp4"></video>
-
-                    <button id="mutebutton" onclick="mutevideo()"><img id="mutesvg" src="https://www.svgrepo.com/show/294567/mute.svg" alt=""></button>
-
-                </section>
+                
 
                 <a href="#" id="five"></a>  
                 
@@ -73,13 +74,14 @@
         let img=document.querySelector("#mutesvg");
         v.muted=!v.muted;
         if(v.muted==true){
-            img.src="https://www.svgrepo.com/show/294567/mute.svg"
+            img.src="../icons/vol_off.svg"
         }
         else{
-            img.src="https://www.svgrepo.com/show/176291/speaker-with-sound-waves-outline.svg"
+            img.src="../icons/vol_up.svg"
         }
     
 }
+//<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     hide__ham = () => {
         let s = document.querySelector("#sidebar__content-wrap");
