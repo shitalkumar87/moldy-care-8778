@@ -2,11 +2,10 @@ import footer from "../components/component.js";
 let footer_part = document.getElementById("footer");
 footer_part.innerHTML = footer();
  
+import manufacture from "../components/manufacture.js"
 
-import header from "../components/header.js"
-let Header=document.getElementById("headerContents")
-Header.innerHTML=header()
-
+let endpart=document.getElementById("ending")
+endpart.innerHTML=manufacture()
 
 let data = JSON.parse(localStorage.getItem("cart"));
 console.log(data);

@@ -9,9 +9,7 @@ function goTohelp() {
     window.location.href = "./help.html";
 }
 
-import header from "../components/header.js"
-let Header=document.getElementById("headerContents")
-Header.innerHTML=header()
+ 
 
 
 import footer from "../components/component.js";

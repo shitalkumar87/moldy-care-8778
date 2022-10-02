@@ -74,6 +74,4 @@ data.forEach((el) => {
 });
 }
 
-import header from "../components/header.js"
-let Header=document.getElementById("headerContents")
-Header.innerHTML=header()
+ 

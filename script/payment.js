@@ -32,11 +32,7 @@ for(var i=0;i<data.length;i++){
 
 let total=document.getElementById("price")
   total.innerText=`₹ ${sum}.00`
-
-  
-  import header from "../components/header.js"
-  let Header=document.getElementById("headerContents")
-  Header.innerHTML=header()
+ 
 
   import manufacture from "../components/manufacture.js"
 

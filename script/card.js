@@ -3,10 +3,10 @@ import footer from "../components/component.js";
 let Footer=document.getElementById("footer")
 Footer.innerHTML=footer()
 
-import header from "../components/header.js"
+// import header from "../components/header.js"
  
-let Header=document.getElementById("headerContents")
-Header.innerHTML=header()
+// let Header=document.getElementById("headerContents")
+// Header.innerHTML=header()
 
 import manufacture from "../components/manufacture.js"
 

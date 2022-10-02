@@ -2,7 +2,7 @@
 #logindiv {
     width: 70%;
     height: 100%;
-    margin-top: 210px;
+    padding-top: 210px;
     display: flex;
     gap: 3%;
 }
