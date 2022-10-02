@@ -47,7 +47,7 @@ class signupclass {
     }
   };
   
-  let signupFun=()=>{
+  let signupFun=(event)=>{
     event.preventDefault()
    // let name=document.getElementById('name').value;
    let email=document.getElementById('email').value;
@@ -56,15 +56,16 @@ class signupclass {
     console.log(user);
     if (user.signup()) {
       if (Fil(email)) {
-        alert("Signup sucessfull");
+        alert("Account Created Succesfully");
         signupdataLS.push(user);
         localStorage.setItem("signupdata", JSON.stringify(signupdataLS));
         window.location.href="login.html"
       } else {
-        alert("user already exisit");
+        alert("User Already Exists!");
       }
-    } else {
-      alert("pass should be one  special character and atleast 6 charcter");
+    } 
+    else {
+      alert("Password should contain atleast one special character and 6 characters");
     }
    
   }

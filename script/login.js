@@ -31,7 +31,7 @@ class loginclass {
           return false;
         }
       } else {
-        alert("user doesnot exist pls signup");
+        alert("You Seems to be a New User, please SignUp");
       }
     }
   }
@@ -47,11 +47,11 @@ class loginclass {
     let password = document.getElementById('inputPasswd').value;
     let user = new loginclass(email, password);
     if (user.chek()) {
-      alert("done");
+      alert("Valid Credentials");
       localStorage.setItem("login", true);
        window.location.href = "./processing.html";
     } else {
-      alert("password in correct");
+      alert("Wrong Password");
     }
   };
  
