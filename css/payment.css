@@ -58,8 +58,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin-bottom: 20px;
 
 }
+#pay-option-item2{
+    border: 1px solid rgb(182, 175, 175);
+    width: 145px;
+    height: 135px;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
 
 #payment-img{
+    height: 100px;
+    width: 100px;
+}
+#payment-img2{
     height: 100px;
     width: 100px;
 }

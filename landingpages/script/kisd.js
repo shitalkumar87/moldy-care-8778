@@ -81,7 +81,7 @@ function changebg(){
         let cart= document.querySelector(".svg__cart");
         cart.style.fill="black";
     }
-    if(window.scrollY>6000){
+    if(window.scrollY>4500){
         let a1= document.querySelector("#hover_links");;
         a1.style.display="none";
         let buttn = document.querySelector("#menlink");

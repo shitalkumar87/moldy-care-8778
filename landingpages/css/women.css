@@ -1,10 +1,30 @@
 video{
     width: 100%;
     height: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     object-fit: cover;
     
 }
+.video_one {
+    position: absolute;
+   width: fit-content;
+   height: fit-content;
+}
+
+#mutebutton {
+    z-index: 10;
+    position: relative;
+    bottom: 20%;
+    left: -40%;
+    width: 50px;
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+#mutesvg{
+    width: 100%;
+}
+
 section{
     margin: auto;
     text-align: center;
@@ -45,7 +65,7 @@ section>img{
     width: 100%;
     height: 60vh;
      /* border: 2px solid pink; */
-     margin-top: -800px;
+     margin-top: -600px;
      display: flex;
      flex-direction: column;
      text-align: center;

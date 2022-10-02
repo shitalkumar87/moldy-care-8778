@@ -21,3 +21,7 @@ import manufacture from "../components/manufacture.js"
 
 let endpart=document.getElementById("Ending")
 endpart.innerHTML=manufacture()
+
+let url = `https://ancient-bastion-92331.herokuapp.com/api/women`;
+
+ 

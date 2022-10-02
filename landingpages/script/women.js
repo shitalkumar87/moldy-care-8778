@@ -78,7 +78,7 @@ function changebg(){
         let a1= document.querySelector("#hover_links");
         a1.style.color="BLACK";
     }
-    if(window.scrollY>4500){
+    if(window.scrollY>4000){
         let a1= document.querySelector("#hover_links");;
         a1.style.display="none";
         let buttn = document.querySelector("#menlink");

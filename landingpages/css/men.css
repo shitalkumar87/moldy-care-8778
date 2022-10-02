@@ -28,7 +28,7 @@
 video{
     width: 100%;
     height: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     object-fit: cover;
     
 }
@@ -63,7 +63,7 @@ section>img{
     width: 100%;
     height: 60vh;
      /* border: 2px solid pink; */
-     margin-top: -800px;
+     margin-top: -600px;
      display: flex;
      flex-direction: column;
      text-align: center;

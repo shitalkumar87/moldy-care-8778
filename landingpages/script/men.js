@@ -81,7 +81,7 @@ function changebg(){
         let a1= document.querySelector("#hover_links");
         a1.style.color="black";
     }
-    if(window.scrollY>3000){
+    if(window.scrollY>2500){
         let a1= document.querySelector("#hover_links");;
         a1.style.display="none";
         let button1=document.querySelector("#womenlink");

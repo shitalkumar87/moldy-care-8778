@@ -1,25 +1,7 @@
 
-let data=[
-      {
-        img:"https://images.unsplash.com/photo-1622445275463-afa2ab738c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-
-      },
-      {
-        img:"https://images.unsplash.com/photo-1622445275463-afa2ab738c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-
-      },
-      {
-        img:"https://images.unsplash.com/photo-1622445275463-afa2ab738c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-
-      },
-      {
-        img:"https://images.unsplash.com/photo-1622445275463-afa2ab738c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-
-      }
-
-]
-  
- 
+ let totalprice=JSON.parse(localStorage.getItem("price_total"))
+ let data = JSON.parse(localStorage.getItem("cart"));
+  console.log(data)
 let append=(data)=>{
 
     let cont=document.getElementById("append-box")
@@ -30,7 +12,7 @@ let append=(data)=>{
         let div=document.createElement("div")
 
         let image=document.createElement("img")
-        image.src=el.img
+        image.src=el.image
         image.id="img"
 
         div.append(image)
@@ -45,6 +27,7 @@ import footer from "../components/component.js"
  let Footer=document.getElementById("footer")
  Footer.innerHTML=footer()
 
+ document.getElementById("price").innerText=totalprice
 
  
 

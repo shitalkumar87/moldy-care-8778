@@ -26,8 +26,12 @@
             <section class="midsec_lan" class="fourth_img"><img id="img4" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-basics/subhome-xmedia-38//w/1733/IMAGE-landscape-fill-f5302ebb-2ddc-4218-81c2-eb0464c2d73f-default_0.jpg?ts=1663576361647" alt=""></section >
                 <a href="#" id="four"></a>  
                 <section class="midsec_lan" class="video_one">
-                    <video id="video1" autoplay loop src="./css/components/women1080vedeo.mp4"></video>
+                    <video id="video1" muted autoplay loop src="./css/components/women1080vedeo.mp4"></video>
+
+                    <button id="mutebutton" onclick="mutevideo()"><img id="mutesvg" src="https://www.svgrepo.com/show/294567/mute.svg" alt=""></button>
+
                 </section>
+
                 <a href="#" id="five"></a>  
                 
                 <section class="midsec_lan" class="fifth_img"><img id="img5"src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-shoes-bags/subhome-xmedia-38//w/1733/IMAGE-landscape-default-fill-5c2d5cc1-7805-42c8-9238-635ec71551d3-default_0.jpg?ts=1663770211821" alt=""></section >
@@ -63,7 +67,20 @@
 
 </html>
 <script>
-   
+   mutevideo = () => {
+        
+        let v= document.querySelector("video");
+        let img=document.querySelector("#mutesvg");
+        v.muted=!v.muted;
+        if(v.muted==true){
+            img.src="https://www.svgrepo.com/show/294567/mute.svg"
+        }
+        else{
+            img.src="https://www.svgrepo.com/show/176291/speaker-with-sound-waves-outline.svg"
+        }
+    
+}
+
     hide__ham = () => {
         let s = document.querySelector("#sidebar__content-wrap");
         s.style.display = "block";

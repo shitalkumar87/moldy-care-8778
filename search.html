@@ -31,11 +31,11 @@
     </div>
 
      <div id="search">
-             <input type="text" id="query" placeholder="ENTER SEARCH TERMS"  
+             <input oninput="debouncing(main,1000)" type="text" id="query" placeholder="ENTER SEARCH TERMS"  
               >
      </div>
       
-       
+       <div id="cointaner"></div>
     
      <div id="Trend_box">
            
@@ -84,3 +84,4 @@
 
 </script>
 <script src="./components/allsidebar.js"></script>
+<script src="./script/debounce.js"></script>
