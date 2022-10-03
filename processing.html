@@ -119,6 +119,9 @@
     header.innerHTML = navbar();
     let sidebar = document.getElementById("sidebar__content-wrap");
     sidebar.innerHTML = sidecontent();
-  
+    let data= JSON.parse(localStorage.getItem("signupdata"))
+     let prename=data[data.length-1].name
+     prename=prename.toUpperCase()
+    document.getElementById("log-name").innerText=`${prename}`
   </script>
   <script src="./components/allsidebar.js"></script>

@@ -39,7 +39,8 @@ class loginclass {
   
   let login = localStorage.setItem("login", false);
   
- 
+  let signupdata= JSON.parse(localStorage.getItem("signupdata"))
+ console.log(signupdata)
   
   let  signinFun= () => {
     event.preventDefault();

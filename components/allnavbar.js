@@ -25,7 +25,7 @@ function navbar(){
             </div>
             <div class="logsign">
             <a href="./login.html" class="header__links header_login">
-                <span>LOG IN</span>
+                <span id="log-name">LOG IN</span>
             </a>
             <a href="./help.html" class="header__links header_help">
                 <span>HELP</span>

@@ -12,10 +12,11 @@ endpart.innerHTML=manufacture()
 
 
 class signupclass {
-    constructor(email, password) {
+    constructor(email, password,name) {
       
       this.email = email;
       this.password = password;
+      this.name=name
     }
     signup() {
       if (this.#vlaidate()) {
@@ -52,7 +53,8 @@ class signupclass {
    // let name=document.getElementById('name').value;
    let email=document.getElementById('email').value;
    let password=document.getElementById('password').value;
-   let user = new signupclass(email,password);
+   let name=document.getElementById('name').value;
+   let user = new signupclass(email,password,name);
     console.log(user);
     if (user.signup()) {
       if (Fil(email)) {

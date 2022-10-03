@@ -27,7 +27,7 @@ import footer from "../components/component.js"
  let Footer=document.getElementById("footer")
  Footer.innerHTML=footer()
 
- document.getElementById("price").innerText=totalprice
+ document.getElementById("price").innerText=`₹ ${totalprice}`
 
  
 
@@ -35,3 +35,4 @@ import manufacture from "../components/manufacture.js"
 
 let endpart=document.getElementById("ending")
 endpart.innerHTML=manufacture()
+ 
