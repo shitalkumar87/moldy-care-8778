@@ -1,4 +1,4 @@
-let url = `https://ancient-bastion-92331.herokuapp.com/api/women`;
+let url = `https://639eacf53542a261305f79e4.mockapi.io/women`;
 
 let getData = async() => {
   let res = await fetch(`${url}`);

@@ -1,7 +1,7 @@
 let id;
 //let url = `https://ancient-bastion-92331.herokuapp.com/api/men`;
 // let url = `https://ancient-bastion-92331.herokuapp.com/api/men`;
-let url = `https://ancient-bastion-92331.herokuapp.com/api`;
+let url = `https://639eacf53542a261305f79e4.mockapi.io`;
 let getdata=async()=>{
 
     let query=document.getElementById("query").value
